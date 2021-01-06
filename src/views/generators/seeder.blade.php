@@ -1,3 +1,5 @@
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
 
 class CountriesSeeder extends Seeder {

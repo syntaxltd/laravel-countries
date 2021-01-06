@@ -1,14 +1,9 @@
 {
-    "_readme": [
-        "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
-        "This file is @generated automatically"
-    ],
-    "content-hash": "d4e43875ec3ecdf182d3cd3a8f90d997",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
             "version": "dev-master",
+            "version_normalized": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/package-versions-deprecated.git",
@@ -32,6 +27,7 @@
                 "ext-zip": "^1.13",
                 "phpunit/phpunit": "^6.5 || ^7"
             },
+            "time": "2020-12-27T20:11:05+00:00",
             "default-branch": true,
             "type": "composer-plugin",
             "extra": {
@@ -40,6 +36,7 @@
                     "dev-master": "1.x-dev"
                 }
             },
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "PackageVersions\\": "src/PackageVersions"
@@ -78,11 +75,12 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-12-27T20:11:05+00:00"
+            "install-path": "./package-versions-deprecated"
         },
         {
             "name": "doctrine/cache",
             "version": "dev-master",
+            "version_normalized": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
@@ -110,12 +108,14 @@
             "suggest": {
                 "alcaeus/mongo-php-adapter": "Required to use legacy MongoDB driver"
             },
+            "time": "2021-01-04T19:38:55+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
                     "dev-master": "1.11.x-dev"
                 }
             },
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Doctrine\\Common\\Cache\\": "lib/Doctrine/Common/Cache"
@@ -178,20 +178,21 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-04T19:38:55+00:00"
+            "install-path": "../doctrine/cache"
         },
         {
             "name": "doctrine/dbal",
-            "version": "dev-master",
+            "version": "3.1.x-dev",
+            "version_normalized": "3.1.9999999.9999999-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "75d22a1b82d8240284b3f49cd4d41b19e67d86a9"
+                "reference": "ee6d1260d5cc20ec506455a585945d7bdb98662c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/75d22a1b82d8240284b3f49cd4d41b19e67d86a9",
-                "reference": "75d22a1b82d8240284b3f49cd4d41b19e67d86a9",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/ee6d1260d5cc20ec506455a585945d7bdb98662c",
+                "reference": "ee6d1260d5cc20ec506455a585945d7bdb98662c",
                 "shasum": ""
             },
             "require": {
@@ -203,17 +204,18 @@
             "require-dev": {
                 "doctrine/coding-standard": "^8.1",
                 "jetbrains/phpstorm-stubs": "^2019.1",
-                "phpstan/phpstan": "^0.12.55",
-                "phpstan/phpstan-phpunit": "^0.12",
+                "phpstan/phpstan": "^0.12.40",
                 "phpstan/phpstan-strict-rules": "^0.12.2",
                 "phpunit/phpunit": "^9.4",
-                "psalm/plugin-phpunit": "^0.13.0",
+                "psalm/plugin-phpunit": "^0.10.0",
                 "symfony/console": "^2.0.5|^3.0|^4.0|^5.0",
-                "vimeo/psalm": "^4.1"
+                "vimeo/psalm": "^3.17.2"
             },
             "suggest": {
                 "symfony/console": "For helpful console commands such as SQL execution and import of files."
             },
+            "time": "2020-11-15T18:20:41+00:00",
+            "default-branch": true,
             "bin": [
                 "bin/doctrine-dbal"
             ],
@@ -223,6 +225,7 @@
                     "dev-master": "4.0.x-dev"
                 }
             },
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Doctrine\\DBAL\\": "src"
@@ -274,7 +277,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/dbal/issues",
-                "source": "https://github.com/doctrine/dbal/tree/master"
+                "source": "https://github.com/doctrine/dbal/tree/3.0.0"
             },
             "funding": [
                 {
@@ -290,11 +293,12 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-11-26T02:20:48+00:00"
+            "install-path": "../doctrine/dbal"
         },
         {
             "name": "doctrine/event-manager",
             "version": "1.1.x-dev",
+            "version_normalized": "1.1.9999999.9999999-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/event-manager.git",
@@ -317,6 +321,7 @@
                 "phpstan/phpstan": "^0.12.58",
                 "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0"
             },
+            "time": "2020-12-12T19:38:43+00:00",
             "default-branch": true,
             "type": "library",
             "extra": {
@@ -324,6 +329,7 @@
                     "dev-master": "1.0.x-dev"
                 }
             },
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Doctrine\\Common\\": "lib/Doctrine/Common"
@@ -386,20 +392,9 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-12-12T19:38:43+00:00"
+            "install-path": "../doctrine/event-manager"
         }
     ],
-    "packages-dev": [],
-    "aliases": [],
-    "minimum-stability": "dev",
-    "stability-flags": {
-        "doctrine/dbal": 20
-    },
-    "prefer-stable": false,
-    "prefer-lowest": false,
-    "platform": {
-        "php": ">=5.3.0"
-    },
-    "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "dev": true,
+    "dev-package-names": []
 }

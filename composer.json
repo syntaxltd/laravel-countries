@@ -47,5 +47,6 @@
 		    "Countries": "Webpatser\\Countries\\CountriesFacade"
 		}
 	    }
-	}
+	},
+  "version": "1.5.6"
 }
